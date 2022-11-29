@@ -9,4 +9,6 @@ payload:
   - "+.pangolin-sdk-toutiao.com"
   - "+.adsmind.ugdtimg.com"
   - "+.gdt.qq.com"
-  - "+.googleads.g.doubleclick.net"
+  - ".googleads.g.doubleclick.net"
+  - ".qzs.gdtimg.com"
+  - "+.jpush.cn"
