@@ -1,0 +1,12 @@
+# Behavior: domain
+
+payload:
+  - "+.lf3-analytics.bytescm.com"
+  - "+.gdfp.gifshow.com"
+  - "+.e.kuaishou.com"
+  - "+.e.qq.com"
+  - "+.pglstatp-toutiao.com"
+  - "+.pangolin-sdk-toutiao.com"
+  - "+.adsmind.ugdtimg.com"
+  - "+.gdt.qq.com"
+  - "+.googleads.g.doubleclick.net"
