@@ -38,3 +38,6 @@ rules:
   - DOMAIN,adservice.google.com,REJECT
   - DOMAIN,optimus-ads.amap.com,REJECT
   - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
+  - DOMAIN,utoken.umeng.com,REJECT
+  - DOMAIN,ulogs.umeng.com,REJECT
+  - DOMAIN-SUFFIX,snssdk.com,REJECT
