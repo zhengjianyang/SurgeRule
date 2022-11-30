@@ -2,6 +2,8 @@ name: 广告拦截规则
 desc: 简洁拦截规则、拦截app中主流广告
 
 http:
+  mitm:
+    - "*.baidu.com"
   url-rewrite:
     #京东开屏广告
     - ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject-array
