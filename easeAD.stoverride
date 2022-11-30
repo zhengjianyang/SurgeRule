@@ -41,6 +41,4 @@ rules:
   - DOMAIN,utoken.umeng.com,REJECT
   - DOMAIN,ulogs.umeng.com,REJECT
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
-  - DOMAIN-SUFFIX,snssdk.com,REJECT
-  - DOMAIN-SUFFIX,lhdqsb.cn,REJECT
 
