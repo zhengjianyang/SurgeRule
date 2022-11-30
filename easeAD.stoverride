@@ -1,25 +1,6 @@
 name: 广告拦截规则
 desc: 简洁拦截规则、拦截app中主流广告
 
-
-http:
-  mitm:
-    - "api.m.jd.com"
-    - "api.bilibili.com"
-    - "api.vc.bilibili.com"
-    - "manga.bilibili.com"
-  url-rewrite:
-    #京东开屏广告
-    - ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
-    #哔哩哔哩广告
-    - ^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad - reject
-    - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) - reject
-    - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
-    - ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
-    - ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
-    - ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
-
-
 rules:
   - DOMAIN-SUFFIX,lf3-analytics.bytescm.com,REJECT
   - DOMAIN-SUFFIX,zijieapi.com,REJECT
@@ -28,6 +9,10 @@ rules:
   - DOMAIN-SUFFIX,gdt.qq.com,REJECT
   - DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+  - DOMAIN,dm-hl.toutiao.com,REJECT
+  - DOMAIN,dm.toutiao.com,REJECT
+  - DOMAIN,tnc3-aliec2.bytedance.com,REJECT
+  - DOMAIN,dm.bytedance.com,REJECT
   - DOMAIN-SUFFIX,ugdtimg.com,REJECT
   - DOMAIN-SUFFIX,googleads.g.doubleclick.net,REJECT
   - DOMAIN-SUFFIX,qzs.gdtimg.com,REJECT
