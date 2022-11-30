@@ -43,3 +43,4 @@ rules:
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
   - DOMAIN-SUFFIX,snssdk.com,REJECT
   - DOMAIN-SUFFIX,lhdqsb.cn,REJECT
+
