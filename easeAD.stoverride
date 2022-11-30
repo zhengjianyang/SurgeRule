@@ -13,7 +13,7 @@ http:
     - ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
     - ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
     #test
-    - ^https?:\/\/\w*\.baidu\.com\/? - reject
+    - ^https?:\/\/\w+\.baidu\.com - reject
 
 rules:
   - DOMAIN-SUFFIX,lf3-analytics.bytescm.com,REJECT
