@@ -1,9 +1,13 @@
 name: 广告拦截规则
 desc: 简洁拦截规则、拦截app中主流广告
 
+
 http:
   mitm:
-    - "*.baidu.com"
+    - "api.m.jd.com"
+    - "api.bilibili.com"
+    - "api.vc.bilibili.com"
+    - "manga.bilibili.com"
   url-rewrite:
     #京东开屏广告
     - ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject-array
@@ -14,8 +18,7 @@ http:
     - ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
     - ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
     - ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject
-    #test
-    - ^https?:\/\/\w+\.baidu\.com - reject
+
 
 rules:
   - DOMAIN-SUFFIX,lf3-analytics.bytescm.com,REJECT
