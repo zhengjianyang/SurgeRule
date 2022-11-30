@@ -10,10 +10,10 @@ http:
     - "manga.bilibili.com"
   url-rewrite:
     #京东开屏广告
-    - ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject-array
+    - ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start - reject
     #哔哩哔哩广告
     - ^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad - reject
-    - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash - reject
+    - ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/(Flash|ListFlash) - reject
     - ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject
     - ^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject
     - ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words - reject
@@ -37,3 +37,4 @@ rules:
   - DOMAIN,r6.mo.baidu.com,REJECT
   - DOMAIN,adservice.google.com,REJECT
   - DOMAIN,optimus-ads.amap.com,REJECT
+  - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
