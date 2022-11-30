@@ -40,4 +40,5 @@ rules:
   - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
   - DOMAIN,utoken.umeng.com,REJECT
   - DOMAIN,ulogs.umeng.com,REJECT
+  - DOMAIN-SUFFIX,umengcloud.com,REJECT
   - DOMAIN-SUFFIX,snssdk.com,REJECT
