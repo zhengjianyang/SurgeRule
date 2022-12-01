@@ -1,29 +1,28 @@
 name: 广告拦截规则
 desc: 简洁拦截规则、拦截app中主流广告
 
+rule-providers:
+  category@ads:
+    behavior: domain
+    url: https://rules.kr328.app/category-ads-all@ads.yaml
+    interval: 86400
+    
+
 rules:
+  - RULE-SET,category@ads,REJECT
   - DOMAIN-SUFFIX,lf3-analytics.bytescm.com,REJECT
   - DOMAIN-SUFFIX,zijieapi.com,REJECT
-  - DOMAIN-SUFFIX,e.kuaishou.com,REJECT
-  - DOMAIN-SUFFIX,e.qq.com,REJECT
-  - DOMAIN-SUFFIX,gdt.qq.com,REJECT
-  - DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
-  - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
-  - DOMAIN,dm-hl.toutiao.com,REJECT
-  - DOMAIN,dm.toutiao.com,REJECT
   - DOMAIN,tnc3-aliec2.bytedance.com,REJECT
   - DOMAIN,dm.bytedance.com,REJECT
+  - DOMAIN-SUFFIX,e.kuaishou.com,REJECT
+  - DOMAIN-SUFFIX,gdt.qq.com,REJECT
+  - DOMAIN,dm-hl.toutiao.com,REJECT
+  - DOMAIN,dm.toutiao.com,REJECT
   - DOMAIN-SUFFIX,ugdtimg.com,REJECT
-  - DOMAIN-SUFFIX,googleads.g.doubleclick.net,REJECT
   - DOMAIN-SUFFIX,qzs.gdtimg.com,REJECT
   - DOMAIN-SUFFIX,gdfp.gifshow.com,REJECT
   - DOMAIN-SUFFIX,jpush.cn,REJECT
-  - DOMAIN,res.mi.baidu.com,REJECT
-  - DOMAIN,r6.mo.baidu.com,REJECT
-  - DOMAIN,adservice.google.com,REJECT
   - DOMAIN,optimus-ads.amap.com,REJECT
   - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
-  - DOMAIN,utoken.umeng.com,REJECT
-  - DOMAIN,ulogs.umeng.com,REJECT
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
 
