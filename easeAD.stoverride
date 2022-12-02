@@ -26,4 +26,5 @@ rules:
   - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sak-toutiao-b.com,REJECT
+  - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
 
