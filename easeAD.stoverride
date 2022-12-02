@@ -25,4 +25,5 @@ rules:
   - DOMAIN,optimus-ads.amap.com,REJECT
   - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
+  - DOMAIN-SUFFIX,pangolin-sak-toutiao-b.com,REJECT
 
