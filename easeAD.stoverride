@@ -27,4 +27,5 @@ rules:
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sak-toutiao-b.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+  - DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
 
