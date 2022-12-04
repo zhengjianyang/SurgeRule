@@ -28,4 +28,5 @@ rules:
   - DOMAIN-SUFFIX,pangolin-sak-toutiao-b.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
   - DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
+  - DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
 
