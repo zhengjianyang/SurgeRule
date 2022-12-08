@@ -17,16 +17,26 @@ rules:
   - DOMAIN-SUFFIX,e.kuaishou.com,REJECT
   - DOMAIN-SUFFIX,gdt.qq.com,REJECT
   - DOMAIN,dm-hl.toutiao.com,REJECT
-  - DOMAIN,dm.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,dm.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,d.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,ad.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,adshare.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,dsp.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,nativeapp.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,partner.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,sm.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,log3-normal-hl.toutiaoapi.com,REJECT
   - DOMAIN-SUFFIX,ugdtimg.com,REJECT
   - DOMAIN-SUFFIX,qzs.gdtimg.com,REJECT
   - DOMAIN-SUFFIX,gdfp.gifshow.com,REJECT
   - DOMAIN-SUFFIX,jpush.cn,REJECT
   - DOMAIN,optimus-ads.amap.com,REJECT
-  - DOMAIN-SUFFIX,snssdk.com,REJECT
+  - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sak-toutiao-b.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
   - DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
   - DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
+  - DOMAIN-SUFFIX,toutiao-frontier.snssdk.com,REJECT
+  - DOMAIN-SUFFIX,xlog.snssdk.com,REJECT
 
