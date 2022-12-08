@@ -13,10 +13,10 @@ rules:
   - DOMAIN-SUFFIX,lf3-analytics.bytescm.com,REJECT
   - DOMAIN-SUFFIX,zijieapi.com,REJECT
   - DOMAIN,tnc3-aliec2.bytedance.com,REJECT
-  - DOMAIN,dm.bytedance.com,REJECT
+  - DOMAIN-SUFFIX,dm.bytedance.com,REJECT
   - DOMAIN-SUFFIX,e.kuaishou.com,REJECT
   - DOMAIN-SUFFIX,gdt.qq.com,REJECT
-  - DOMAIN,dm-hl.toutiao.com,REJECT
+  - DOMAIN-SUFFIX,dm-hl.toutiao.com,REJECT
   - DOMAIN-SUFFIX,dm.toutiao.com,REJECT
   - DOMAIN-SUFFIX,d.toutiao.com,REJECT
   - DOMAIN-SUFFIX,ad.toutiao.com,REJECT
@@ -30,7 +30,7 @@ rules:
   - DOMAIN-SUFFIX,qzs.gdtimg.com,REJECT
   - DOMAIN-SUFFIX,gdfp.gifshow.com,REJECT
   - DOMAIN-SUFFIX,jpush.cn,REJECT
-  - DOMAIN,optimus-ads.amap.com,REJECT
+  - DOMAIN-SUFFIX,optimus-ads.amap.com,REJECT
   - DOMAIN-SUFFIX,cm.bilibili.com,REJECT
   - DOMAIN-SUFFIX,umengcloud.com,REJECT
   - DOMAIN-SUFFIX,pangolin-sak-toutiao-b.com,REJECT
