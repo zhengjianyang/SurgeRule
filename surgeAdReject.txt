@@ -44,3 +44,6 @@ DOMAIN-SUFFIX,log-sdk.gifshow.com
 DOMAIN-SUFFIX,clickserver.googleads.com
 DOMAIN-SUFFIX,googleadapis.com
 DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
