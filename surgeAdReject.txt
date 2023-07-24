@@ -49,3 +49,4 @@ DOMAIN-SUFFIX,ulogs.umeng.com
 DOMAIN-SUFFIX,ut.taobao.com
 DOMAIN-SUFFIX,adsmind.ugdtimg.com
 DOMAIN-SUFFIX,log.umsns.com
+DOMAIN-SUFFIX,pagead2.googlesyndication.com
