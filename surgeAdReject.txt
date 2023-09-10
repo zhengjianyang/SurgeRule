@@ -1,5 +1,4 @@
 DOMAIN-SUFFIX,bytescm.com
-DOMAIN-SUFFIX,zijieapi.com
 DOMAIN,tnc3-aliec2.bytedance.com
 DOMAIN-SUFFIX,dm.bytedance.com
 DOMAIN-SUFFIX,e.kuaishou.com
