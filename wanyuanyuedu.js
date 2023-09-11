@@ -9,17 +9,20 @@
 hostname = buy.itunes.apple.com
 
 */
-var result = JSON.parse(typeof $response != "undefined" && $response.body || null);
-for (var key in $request.headers) {
-  const reg = /^[a-z]+$/;
-  if (key === "User-Agent" && !reg.test(key)) {
-    var lowerkey = key.toLowerCase();
-    $request.headers[lowerkey] = $request.headers[key];
-    delete $request.headers[key];
-  }
+let result = null;
+try {
+  result = JSON.parse(typeof $response != "undefined" && $response.body || null);
+} catch (error) {
+  $done({});
 }
-var UA = $request.headers['user-agent'];
-var receipt = {
+if (result === null) {
+  $done({});
+}
+let bundle_id = result.receipt.bundle_id;
+if (bundle_id != "com.lmf.wext") {
+  $done({});
+}
+let receipt = {
   "quantity": "1",
   "purchase_date_ms": "1686002766000",
   "expires_date": "6666-06-06 06:06:06 Etc\/GMT",
@@ -39,7 +42,7 @@ var receipt = {
   "purchase_date_pst": "2023-06-06 06:06:06 America\/Los_Angeles",
   "original_purchase_date": "2023-06-06 06:06:06 Etc\/GMT"
 }
-var renewal = {
+let renewal = {
   "expiration_intent": "1",
   "product_id": "vip",
   "is_in_billing_retry_period": "0",
@@ -47,15 +50,10 @@ var renewal = {
   "original_transaction_id": "666666666666666",
   "auto_renew_status": "0"
 }
-if (UA && UA.includes('Wext/1 CFNetwork/')) {
-  var product_id = 'com.lmf.wext.year';
-  receipt.product_id = product_id;
-  renewal.product_id = product_id;
-  renewal.auto_renew_product_id = product_id;
-  result.receipt.in_app = [receipt];
-  result.latest_receipt_info = [receipt];
-  result.pending_renewal_info = [renewal];
-  $done({ body: JSON.stringify(result) });
-} else {
-  $done({});
-}
+receipt.product_id = bundle_id; //'com.lmf.wext.year'
+renewal.product_id = bundle_id;
+renewal.auto_renew_product_id = bundle_id;
+result.receipt.in_app = [receipt];
+result.latest_receipt_info = [receipt];
+result.pending_renewal_info = [renewal];
+$done({ body: JSON.stringify(result) });
