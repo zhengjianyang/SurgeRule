@@ -9,6 +9,7 @@
 hostname = buy.itunes.apple.com
 
 */
+
 let result = null;
 try {
   result = JSON.parse(typeof $response != "undefined" && $response.body || null);
@@ -18,8 +19,7 @@ try {
 if (result === null) {
   $done({});
 }
-let bundle_id = result.receipt.bundle_id;
-if (bundle_id != "com.lmf.wext") {
+if (result.receipt.bundle_id != "com.lmf.wext") {
   $done({});
 }
 let receipt = {
@@ -50,9 +50,10 @@ let renewal = {
   "original_transaction_id": "666666666666666",
   "auto_renew_status": "0"
 }
-receipt.product_id = bundle_id; //'com.lmf.wext.year'
-renewal.product_id = bundle_id;
-renewal.auto_renew_product_id = bundle_id;
+let product_id = 'com.lmf.wext.year';
+receipt.product_id = product_id;
+renewal.product_id = product_id;
+renewal.auto_renew_product_id = product_id;
 result.receipt.in_app = [receipt];
 result.latest_receipt_info = [receipt];
 result.pending_renewal_info = [renewal];
