@@ -51,4 +51,5 @@ let renewal = {
 result.receipt.in_app = [receipt];
 result.latest_receipt_info = [receipt];
 result.pending_renewal_info = [renewal];
+result.latest_receipt = null;
 $done({ body: JSON.stringify(result) });
