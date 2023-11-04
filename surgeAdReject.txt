@@ -45,6 +45,5 @@ DOMAIN-SUFFIX,ctobsnssdk.com
 DOMAIN-SUFFIX,ulogs.umeng.com
 DOMAIN-SUFFIX,ut.taobao.com
 DOMAIN-SUFFIX,log.umsns.com
-DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,doubleclick-cn.net
