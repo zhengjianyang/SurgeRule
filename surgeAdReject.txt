@@ -47,3 +47,4 @@ DOMAIN-SUFFIX,ut.taobao.com
 DOMAIN-SUFFIX,log.umsns.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,doubleclick-cn.net
+DOMAIN-SUFFIX,pos.baidu.com
