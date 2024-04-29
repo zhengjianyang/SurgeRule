@@ -57,3 +57,6 @@ DOMAIN-SUFFIX,adstats.tencentmusic.com
 DOMAIN-SUFFIX,oth.eve.mdt.qq.com
 DOMAIN-SUFFIX,u.y.qq.com
 DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
+DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
+DOMAIN-SUFFIX,tmeadcomm.y.qq.com
+DOMAIN-SUFFIX,uyunad.com
