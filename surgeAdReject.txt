@@ -54,3 +54,6 @@ DOMAIN-SUFFIX,us.l.qq.com
 DOMAIN-SUFFIX,ad.tencentmusic.com
 DOMAIN-SUFFIX,adsmind.gdtimg.com
 DOMAIN-SUFFIX,adstats.tencentmusic.com
+DOMAIN-SUFFIX,oth.eve.mdt.qq.com
+DOMAIN-SUFFIX,u.y.qq.com
+DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
