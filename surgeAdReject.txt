@@ -43,8 +43,14 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,sdk.e.qq.com
 DOMAIN-SUFFIX,ctobsnssdk.com
 DOMAIN-SUFFIX,ulogs.umeng.com
+DOMAIN-SUFFIX,utoken.umeng.com
 DOMAIN-SUFFIX,ut.taobao.com
 DOMAIN-SUFFIX,log.umsns.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,doubleclick-cn.net
 DOMAIN-SUFFIX,pos.baidu.com
+DOMAIN-SUFFIX,pgdt.gtimg.cn
+DOMAIN-SUFFIX,us.l.qq.com
+DOMAIN-SUFFIX,ad.tencentmusic.com
+DOMAIN-SUFFIX,adsmind.gdtimg.com
+DOMAIN-SUFFIX,adstats.tencentmusic.com
