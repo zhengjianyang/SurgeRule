@@ -1,10 +1,7 @@
 /*
 
-懒人听书
-2024年5月6日
-
 [rewrite_local]
-^https?:\/\/\w+api\.mting\.info\/yyting\/userclient\/ClientGetUserInfo\.action url script-response-body https://raw.githubusercontent.com/zhengjianyang/SurgeRule/main/lrts.js
+(^https?:\/\/\w+api\.mting\.info\/yyting\/userclient\/ClientGetUserInfo\.action|https?:\/\/m\.lrts\.me\/ajax\/getUserInfo) url script-response-body https://raw.githubusercontent.com/zhengjianyang/SurgeRule/main/lrts.js
 
 [MITM]
 hostname = gzapi.mting.info,shapi.mting.info
