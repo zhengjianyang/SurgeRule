@@ -28,4 +28,5 @@ result.vipBuyExpireTime = 9999999999999;
 result.vipExpireTime = 9999999999999;
 result.vipExpireTimeNonExperience = 9999999999999;
 result.purchaseTime = "2066-06-06 06:06:06";
+result.userState = 16512;
 $done({ body: JSON.stringify(result) });
