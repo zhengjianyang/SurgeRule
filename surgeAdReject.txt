@@ -59,4 +59,3 @@ DOMAIN-SUFFIX,uyunad.com
 DOMAIN-SUFFIX,wwads.cn
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,google-analytics.com
-DOMAIN-SUFFIX,pagead2.googlesyndication.com
