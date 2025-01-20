@@ -10,6 +10,7 @@ URL-REGEX,^https://app\.c\.nf\.migu\.cn/member/api/marketing/text,REJECT
 
 [Header Rewrite]
 http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace Cookie ""
+http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace cookie ""
 http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace bversionid ""
 http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace ce ""
 http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-add uid 15659432583520401615740
