@@ -1,0 +1,9 @@
+#!name=懒人听书VIP
+#!desc=解锁VIP播放、不限时
+#!system=ios
+
+[Body Rewrite]
+http-response https://gzapi.mting.info/yyting/user/vipInfo* '"vipUser":false,' '"vipUser":true,' "vipRightsLevel":0 "vipRightsLevel":2 '"expireTime":\d+,' '"expireTime":1777777777000,' '"payExpireTime":\d+,' '"payExpireTime":1777777777000,' '"freeExpireTime":\d+,' '"freeExpireTime":1777777777000,' '"experienceExpireTime":\d+,' '"experienceExpireTime":1777777777000,' '"subscribeStatus":2,' '"subscribeStatus":0,' '"experienceCardExpireTime":\d+,' '"experienceCardExpireTime":99999999,'
+
+[MITM]
+hostname = %INSERT% gzapi.mting.info
