@@ -8,6 +8,7 @@ URL-REGEX,^https://shapi\.mting\.info/yyting/tradeclient/entityPrice\.action,REJ
 URL-REGEX,^https://shapi\.mting\.info/advert/ClientAdvertList\.action,REJECT
 URL-REGEX,^https://shapi\.mting\.info/advert/advertDefaultList\.action,REJECT
 URL-REGEX,^https://shapi\.mting\.info/advert/ClientAdvertList\.action,REJECT
+URL-REGEX,^https://shapi\.mting\.info/yyting/globalfree/getGlobalFreeModeInfo,REJECT
 
 [Body Rewrite]
 http-response https://(?:gzapi|shapi).mting.info/yyting/user/vipInfo* '"vipUser":false,' '"vipUser":true,' "vipRightsLevel":0 "vipRightsLevel":2 '"expireTime":\d+,' '"expireTime":1777777777000,' '"payExpireTime":\d+,' '"payExpireTime":1777777777000,' '"freeExpireTime":\d+,' '"freeExpireTime":1777777777000,' '"experienceExpireTime":\d+,' '"experienceExpireTime":1777777777000,' '"subscribeStatus":2,' '"subscribeStatus":0,' '"experienceCardExpireTime":\d+,' '"experienceCardExpireTime":99999999,'
