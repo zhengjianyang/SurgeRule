@@ -9,10 +9,12 @@ URL-REGEX,^https://shapi\.mting\.info/advert/ClientAdvertList\.action,REJECT
 URL-REGEX,^https://shapi\.mting\.info/advert/advertDefaultList\.action,REJECT
 URL-REGEX,^https://shapi\.mting\.info/advert/ClientAdvertList\.action,REJECT
 URL-REGEX,^https://shapi\.mting\.info/yyting/globalfree/getGlobalFreeModeInfo,REJECT
+URL-REGEX,^https://shapi\.mting\.info/advert/ClientAdvertList\.action,REJECT
 
 [Body Rewrite]
 http-response https://(?:gzapi|shapi).mting.info/yyting/user/vipInfo '"vipUser":false,' '"vipUser":true,' "vipRightsLevel":0 "vipRightsLevel":2 '"expireTime":\d+,' '"expireTime":1777777777000,' '"payExpireTime":\d+,' '"payExpireTime":1777777777000,' '"freeExpireTime":\d+,' '"freeExpireTime":1777777777000,' '"experienceExpireTime":\d+,' '"experienceExpireTime":1777777777000,' '"subscribeStatus":2,' '"subscribeStatus":0,' '"experienceCardExpireTime":\d+,' '"experienceCardExpireTime":99999999,'
 http-response https://(?:gzapi|shapi).mting.info/yyting/globalfree/getGlobalFreeModeInfo '"freeSendTimeSecond":\s*\d+,' '"freeSendTimeSecond":18000,' '"unlockTotalTime":\s*\d+,' '"unlockTotalTime":18000,' '"availableTime":\s*\d+,' '"availableTime":18000,'
+http-response https://(?:gzapi|shapi).mting.info/yyting/userclient/ClientGetUserInfo\.action '"isV":0,' '"isV":1,' '"vipType":0,' '"vipType":1,' '"vipExpireTime":\s*\d+,' '"vipExpireTime":1777777777000,' '"vipBuyExpireTime":\s*\d+,' '"vipBuyExpireTime":1777777777000,' '"vipExpireTimeNonExperience":\s*\d+,' '"vipExpireTimeNonExperience":1777777777000,'
 
 [MITM]
 hostname = %INSERT% gzapi.mting.info,shapi.mting.info
