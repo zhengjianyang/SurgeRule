@@ -1,5 +1,5 @@
 #!name=咪咕音乐解锁部分功能
-#!desc=歌曲播放、下载、去除部分广告
+#!desc=歌曲试听播放全部、暂时使用HQ、更高品质部分歌曲不知道路径，去除部分广告
 #!system=ios
 
 [Rule]
@@ -8,12 +8,8 @@ URL-REGEX,^https://app\.c\.nf\.migu\.cn/column/startup-pic-with-ad,DIRECT
 URL-REGEX,^https://app\.pd\.nf\.migu.cn/bmw/marketing-popup,REJECT
 URL-REGEX,^https://app\.c\.nf\.migu\.cn/member/api/marketing/text,REJECT
 
-[Header Rewrite]
-http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace Cookie ""
-http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace cookie ""
-http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace bversionid ""
-http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-replace ce ""
-http-request ^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/(listen-url|batchQueryMusicPolicy.do|download-url)/ header-add uid 15659432583520401615740
+[Script]
+miguVipSongPlay = type=http-response,pattern=^https://app\.(c|pd)\.nf\.migu\.cn/(\w+)/strategy/listen-url/v2\.4\?,requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/zhengjianyang/SurgeRule/refs/heads/main/miguMusicVipSongPlay.js
 
 [MITM]
 hostname = %INSERT% app.c.nf.migu.cn,app.u.nf.migu.cn,app.pd.nf.migu.cn
