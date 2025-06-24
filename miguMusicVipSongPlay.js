@@ -1,0 +1,17 @@
+let body = JSON.parse($response.body);
+if (!body) $done({});
+let playUrl = body?.data?.url;
+if (!playUrl) $done({});
+console.log("playUrl: " + playUrl);
+const duration = body.data.song.duration;
+playUrl = playUrl.replace("/MP3_128_16_Stero/","/MP3_320_16_Stero/");
+body.data.url = playUrl;
+body.data.audioFormatType = "HQ";
+body.data.auditionsStartTime = 0;
+body.data.auditionsLength = duration;
+console.log("playUrl: " + playUrl);
+console.log("duration: " + duration);
+console.log("audioFormatType: " + body.data.audioFormatType);
+console.log("auditionsStartTime: " + body.data.auditionsStartTime);
+console.log("auditionsLength: " + body.data.auditionsLength);
+$done({ body: JSON.stringify(body) });
