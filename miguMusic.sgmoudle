@@ -1,6 +1,5 @@
 #!name=咪咕音乐解锁部分功能
 #!desc=歌曲试听播放全部、暂时使用HQ、更高品质部分歌曲不知道路径，去除部分广告
-#!system=ios
 
 [Rule]
 URL-REGEX,^https://app\.u\.nf\.migu\.cn/bmw/pay/reminder,REJECT
