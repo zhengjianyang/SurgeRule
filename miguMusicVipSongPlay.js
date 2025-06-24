@@ -1,6 +1,6 @@
 let body = JSON.parse($response.body);
 if (!body) $done({});
-let playUrl = body?.data?.url;
+let playUrl = body.data && body.data.url;
 if (!playUrl) $done({});
 console.log("playUrl: " + playUrl);
 const duration = body.data.song.duration;
