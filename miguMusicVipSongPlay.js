@@ -1,5 +1,6 @@
 let body = JSON.parse($response.body);
 if (!body) $done({});
+console.log("log: ",body.data && body.data.url);
 let playUrl = body.data && body.data.url;
 if (!playUrl) $done({});
 console.log("playUrl: " + playUrl);
