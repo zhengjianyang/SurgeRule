@@ -12,7 +12,7 @@ if (!body){
         //playUrl = playUrl.replace("/%E6%A0%87%E6%B8%85%E9%AB%98%E6%B8%85/MP3_128_16_Stero/","/%E6%AD%8C%E6%9B%B2%E4%B8%8B%E8%BD%BD/flac/")
         //playUrl = playUrl.replace(".mp3",".flac")
         body.data.url = playUrl;
-        body.data.audioFormatType = "HQ";
+        //body.data.audioFormatType = "HQ";
         body.data.auditionsStartTime = 0;
         body.data.auditionsLength = duration;
         console.log("playUrl: " + playUrl);
