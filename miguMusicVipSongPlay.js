@@ -10,9 +10,9 @@ if (!body){
         const duration = body.data.song.duration;
         playUrl = playUrl.replace("/MP3_128_16_Stero/","/MP3_320_16_Stero/");
         //playUrl = playUrl.replace("/%E6%A0%87%E6%B8%85%E9%AB%98%E6%B8%85/MP3_128_16_Stero/","/%E6%AD%8C%E6%9B%B2%E4%B8%8B%E8%BD%BD/flac/")
-        //playUrl = playUrl.replace(".mp3",".flac")
+        //playUrl = playUrl.replace(".mp3",".flac") //有些歌曲路径不同
         body.data.url = playUrl;
-        //body.data.audioFormatType = "HQ";
+        //body.data.audioFormatType = "HQ"; //会影响界面显示，音质会一直显示HQ
         body.data.auditionsStartTime = 0;
         body.data.auditionsLength = duration;
         console.log("playUrl: " + playUrl);
